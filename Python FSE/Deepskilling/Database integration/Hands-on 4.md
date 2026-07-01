@@ -50,7 +50,7 @@ ON enrollments_clean(student_id);
 
 
 ##  Task 3: Identify and Fix the N+1 Problem
-
+```
 import mysql.connector
 import time
 
@@ -115,6 +115,8 @@ print("Total Queries Executed:", query_count)
 print("Time Taken:", round(end_time - start_time, 4), "seconds")
 
 conn.close()
+```
+
 
 ## OUTPUT
 
