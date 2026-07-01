@@ -1,13 +1,14 @@
--- =====================================================
--- Module 3 - Database Integration
--- Hands-On 1
--- Name: Priyadharshini R K
--- Database: college_db
--- =====================================================
 
--- ===========================
--- Task 1: Create Database
--- ===========================
+## Module 3 - Database Integration
+
+## Hands-On 1
+
+--Name: Priyadharshini R K--
+
+-- Database: college_db
+
+##  Task 1: Create Database
+```
 
 CREATE DATABASE IF NOT EXISTS college_db;
 USE college_db;
@@ -67,9 +68,10 @@ CREATE TABLE professors (
     FOREIGN KEY (department_id)
         REFERENCES departments(department_id)
 );
+```
 
 -- =====================================================
--- Task 2: Verification of Normalization
+## Task 2: Verification of Normalization
 -- =====================================================
 
 -- 1NF:
@@ -93,7 +95,7 @@ CREATE TABLE professors (
 -- Hence, the table satisfies 3NF.
 
 -- =====================================================
--- Task 3: Alter and Extend the Schema
+## Task 3: Alter and Extend the Schema
 -- =====================================================
 
 -- Add phone_number column
@@ -117,6 +119,6 @@ RENAME COLUMN hod_name TO head_of_dept;
 ALTER TABLE students
 DROP COLUMN phone_number;
 
---OUTPUT--
+## OUTPUT
 
 <img width="1918" height="1078" alt="Screenshot 2026-06-30 193536" src="https://github.com/user-attachments/assets/d15030d7-57e0-4845-85e2-05b2c886bdbb" />
