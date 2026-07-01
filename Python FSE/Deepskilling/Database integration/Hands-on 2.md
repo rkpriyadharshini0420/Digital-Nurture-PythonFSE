@@ -1,5 +1,7 @@
---Hands-on 2 Tasks--
---Priyadharshini R K--
+## --Hands-on 2 --
+
+
+## --Priyadharshini R K--
 
 ## Task 1: Insert, Update and Delete Data
 
@@ -225,3 +227,9 @@ JOIN enrollments e
 ON c.course_id = e.course_id
 GROUP BY d.department_id, d.dept_name
 HAVING COUNT(DISTINCT e.student_id) > 2;
+
+## OUTPUT
+
+
+<img width="1290" height="690" alt="image" src="https://github.com/user-attachments/assets/024ab080-bf7c-4d68-b43d-cb36030fa614" />
+
