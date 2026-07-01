@@ -1,9 +1,9 @@
---HANDS-ON 3--
+## --HANDS-ON 3--
 --Priyadharshini R K--
 
---Task 1--
+## --Task 1--
 --Subqueries--
-
+```
 SELECT
     s.student_id,
     s.first_name,
@@ -64,11 +64,11 @@ FROM
 ) AS dept_avg
 WHERE avg_salary > 85000;
 
+```
 
-
---Task 2--
+## --Task 2--
 --Views--
-
+```
 
 CREATE VIEW vw_student_enrollment_summary AS
 SELECT
@@ -146,11 +146,11 @@ SELECT
 FROM students
 WHERE department_id IS NOT NULL
 WITH CHECK OPTION;
+```
 
-
---Task 3--
+## --Task 3--
 --Stored Procedures & Transactions--
-
+``
 DELIMITER $$
 
 CREATE PROCEDURE sp_enroll_student(
@@ -252,6 +252,13 @@ COMMIT;
 SELECT *
 FROM enrollments
 WHERE student_id = 2;
+
+
+
+## OUTPUT:
+
+<img width="1918" height="1078" alt="Screenshot 2026-07-01 103807" src="https://github.com/user-attachments/assets/20a0d65e-a4f8-492a-ae69-6a50f665610a" />
+
 
 
 
