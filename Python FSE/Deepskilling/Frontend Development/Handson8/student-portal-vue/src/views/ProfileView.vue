@@ -1,0 +1,16 @@
+<script setup>
+import { useEnrollmentStore } from '../stores/enrollment';
+const store = useEnrollmentStore();
+</script>
+
+<template>
+  <div>
+    <h2>My Profile</h2>
+    <h3>Total Credits: {{ store.totalCredits }}</h3>
+    <ul>
+      <li v-for="course in store.enrolledCourses" :key="course.id">
+        {{ course.name }} ({{ course.code }}) - {{ course.credits }} credits
+      </li>
+    </ul>
+  </div>
+</template>

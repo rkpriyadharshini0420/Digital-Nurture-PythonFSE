@@ -1,0 +1,14 @@
+// =========================================================================
+// HANDS-ON 5: NOSQL DATA MODELING & OPERATIONAL CRUD (MONGODB)
+// Participant:Priyadharshini R K
+// =========================================================================
+use college_nosql;
+
+db.feedback.insertMany([
+  { "student_id": 1, "course_code": "CS101", "rating": 5, "comments": "Excellent!", "tags": ["practical"], "semester": "Fall 2025" },
+  { "student_id": 2, "course_code": "CS101", "rating": 3, "comments": "Challenging.", "tags": ["challenging"], "semester": "Fall 2025" }
+]);
+
+// Queries
+db.feedback.find({ "rating": 5 });
+db.feedback.find({ "course_code": "CS101", "tags": "challenging" });

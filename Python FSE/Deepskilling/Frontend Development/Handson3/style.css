@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; padding: 20px; }
+
+#searchInput { padding: 10px; margin-bottom: 10px; width: 100%; max-width: 300px; }
+#sortBtn { padding: 10px 20px; margin-bottom: 20px; cursor: pointer; }
+
+.course-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.course-card { 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: transform 0.2s; 
+}
+
+.course-card:hover { transform: scale(1.02); background-color: #f9f9f9; }
+
+#totalCreditsDisplay { margin-top: 20px; font-weight: bold; font-size: 1.2rem; }

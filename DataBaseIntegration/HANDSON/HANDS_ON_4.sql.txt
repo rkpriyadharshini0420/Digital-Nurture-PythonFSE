@@ -1,0 +1,11 @@
+-- =========================================================================
+-- HANDS-ON 4: QUERY OPTIMISATION — INDEXES & PERFORMANCE
+-- Participant: Priyadharshini R K
+-- =========================================================================
+
+-- Indexes
+CREATE INDEX idx_students_enrollment_year ON students(enrollment_year);
+CREATE INDEX idx_courses_code ON courses(course_code);
+
+-- Explanation:
+-- Adding b-tree indexes prevents full table scans and allows the database engine to locate student records instantly.
